@@ -1,0 +1,33 @@
+/* Home Page */
+
+.home{
+    padding:30px;
+}
+
+/* Heading */
+
+.home h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Search Box */
+
+.search-box{
+    width:350px;
+    padding:12px;
+    display:block;
+    margin:20px auto;
+    border-radius:8px;
+    border:1px solid gray;
+    font-size:16px;
+}
+
+/* Food Cards Container */
+
+.food-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
