@@ -12,7 +12,7 @@ function Home() {
   const getFoods = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/food"
+        "https://optimal-backend-jzts.onrender.com/api/food"
       );
 
       setFoods(response.data);
@@ -28,7 +28,7 @@ function Home() {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "http://localhost:5000/api/cart/add",
+        "https://optimal-backend-jzts.onrender.com/api/cart/add",
         {
           food: foodId,
           quantity: 1,

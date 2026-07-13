@@ -8,7 +8,7 @@ function Orders() {
     const token = localStorage.getItem("token");
 
     const response = await axios.get(
-      "http://localhost:5000/api/orders",
+      "https://optimal-backend-jzts.onrender.com/api/orders",
       {
         headers: {
           Authorization: token,

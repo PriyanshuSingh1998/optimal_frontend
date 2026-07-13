@@ -11,7 +11,7 @@ function Cart() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/api/cart",
+        "https://optimal-backend-jzts.onrender.com/api/cart",
         {
           headers: {
             Authorization: token,
@@ -31,7 +31,7 @@ function Cart() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/cart/increase/${id}`,
+        `https://optimal-backend-jzts.onrender.com/api/cart/increase/${id}`,
         {},
         {
           headers: {
@@ -52,7 +52,7 @@ function Cart() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/cart/decrease/${id}`,
+        `https://optimal-backend-jzts.onrender.com/api/cart/decrease/${id}`,
         {},
         {
           headers: {
@@ -73,7 +73,7 @@ function Cart() {
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `http://localhost:5000/api/cart/remove/${id}`,
+        `https://optimal-backend-jzts.onrender.com/api/cart/remove/${id}`,
         {
           headers: {
             Authorization: token,
@@ -93,7 +93,7 @@ function Cart() {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "http://localhost:5000/api/orders/place",
+        "https://optimal-backend-jzts.onrender.com/api/orders/place",
         {},
         {
           headers: {

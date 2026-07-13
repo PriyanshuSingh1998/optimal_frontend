@@ -25,7 +25,7 @@ function Admin() {
     try {
         console.log("Food Data:", food);
       const response = await axios.post(
-        "http://localhost:5000/api/food/add",
+        "https://optimal-backend-jzts.onrender.com/api/food/add",
         food
       );
 
@@ -49,7 +49,7 @@ function Admin() {
   const getFoods = async () => {
   try {
     const response = await axios.get(
-      "http://localhost:5000/api/food"
+      "https://optimal-backend-jzts.onrender.com/api/food"
     );
 
     setFoods(response.data);
@@ -63,7 +63,7 @@ const deleteFood = async (id) => {
   try {
 
     await axios.delete(
-      `http://localhost:5000/api/food/${id}`
+      `https://optimal-backend-jzts.onrender.com/api/food/${id}`
     );
 
     alert("Food Deleted");
@@ -81,7 +81,7 @@ const updateFood = async () => {
   try {
 
     const response = await axios.put(
-      `http://localhost:5000/api/food/${editId}`,
+      `https://optimal-backend-jzts.onrender.com/api/food/${editId}`,
       food
     );
 
