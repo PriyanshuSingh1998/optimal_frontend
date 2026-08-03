@@ -17,11 +17,18 @@ function Login() {
         }
       );
 
-      alert(response.data.message);
+  alert(response.data.message);
 
-      localStorage.setItem("token", response.data.token);
+localStorage.setItem("token", response.data.token);
+localStorage.setItem("role", response.data.user.role);
 
-      console.log(response.data);
+if (response.data.user.role === "admin") {
+  window.location.href = "/admin";
+} else {
+  window.location.href = "/";
+}
+
+console.log(response.data);
 
     } catch (error) {
       alert(error.response.data.message);

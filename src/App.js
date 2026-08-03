@@ -8,6 +8,7 @@ import Cart from "./pages/Cart";
 import Orders from "./pages/Orders";
 import Admin from "./pages/Admin";
 import ProtectedRoute from "./components/ProtectedRoute";
+import StudentDashboard from "./pages/StudentDashboard";
 
 function App() {
   return (
@@ -42,6 +43,14 @@ function App() {
   element={
     <ProtectedRoute>
       <Admin />
+    </ProtectedRoute>
+  }
+/>
+<Route
+  path="/student"
+  element={
+    <ProtectedRoute>
+      <StudentDashboard />
     </ProtectedRoute>
   }
 />
