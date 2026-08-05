@@ -25,7 +25,7 @@ localStorage.setItem("role", response.data.user.role);
 if (response.data.user.role === "admin") {
   window.location.href = "/admin";
 } else {
-  window.location.href = "/";
+  window.location.href = "/student";
 }
 
 console.log(response.data);
